@@ -1,9 +1,7 @@
 import { useState,useEffect } from "react";
-import Jobform from './components/Jobform'
 import Jobdetails from './components/Jobdetails'
 import Joblist from './components/Joblist'
 import  Navabar  from './components/Navabar'
-import ApplyForm from './components/Applyform'
 import Sidebar from "./components/Sidebar";
 function App(){
   const [jobs, setJobs] = useState([]);
