@@ -1,16 +1,31 @@
  # Job Portal
 
-This is a React + Vite-based job portal project built by Varshini Kothapalli.
+This is a React + Vite-based job portal application that allows users to browse and filter job listings based on employment type, location, and experience level.
 
-## Setup
+## 🔧 Tech Stack
 
-This template uses Vite with HMR and ESLint rules. It supports:
+- **React** (with Hooks)
+- **Vite** (for fast bundling)
+- **Bootstrap** (for layout and styling)
+- **GitHub** (for version control)
+- **CodeSandbox** (for live preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
+##  Features
 
-## Notes
+- Filter jobs by:
+  - Employment type (Full-time, Part-time, Intern, Contract)
+  - Location (top 5 dynamically extracted)
+  - Experience level (Fresher, 1–3 years, 3+ years)
+- View job details and apply
+- Responsive layout using Bootstrap grid
+- Clean component structure with reusable logic
 
-To enable the React Compiler, see [this guide](https://react.dev/learn/react-compiler/installation).
+##  Approach
 
-For TypeScript + ESLint setup, check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts).
+- Fetched job data from a mock API (`https://jsonfakery.com/jobs`)
+- Used `useState` and `useEffect` for state and lifecycle management
+- Built modular components: `Sidebar`, `JobList`, `JobDetails`, `ApplyForm`
+- Implemented filtering logic in `App.js` to dynamically update job listings
+- Ensured clean code with meaningful variable names and comments
+
+
